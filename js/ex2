@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ex2</title>
+    
+</head>
+<body>
+    <div>
+        <input type="button" value="clica ai" onclick="BtClick()">
+    </div>
+</body>
+<script>
+    
+    function BtClick(){
+        window.alert("Alerta de botão")
+    }
+ </script>
+</html>
