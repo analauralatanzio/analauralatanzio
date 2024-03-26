@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>    
-        <button id="btn">Click aqui</button>
-      
-        <p>
-            Contador de cliques: <span 
-            id="idconta">0</span> vezes
-        </p>
-    </body>
-    <script src="script.js"></script>
-</html>
+var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("idconta");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
