@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soma de Números</title>
+</head>
+<body>
+
+<h1>Soma de Números</h1>
+
+<p>Resultado: <span id="resultado"></span></p>
+
+<script>
+function somaNumeros(num1, num2) {
+    return num1 + num2;
+}
+
+// Função para realizar a soma e exibir o resultado na página
+function realizarSoma() {
+    var numero1 = parseFloat(document.getElementById("numero1").value);
+    var numero2 = parseFloat(document.getElementById("numero2").value);
+
+    var resultado = somaNumeros(numero1, numero2);
+    document.getElementById("resultado").textContent = resultado;
+}
+</script>
+
+<p>
+    <label for="numero1">Número 1:</label>
+    <input type="number" id="numero1">
+</p>
+<p>
+    <label for="numero2">Número 2:</label>
+    <input type="number" id="numero2">
+</p>
+<button onclick="realizarSoma()">Calcular Soma</button>
+
+</body>
+</html>
